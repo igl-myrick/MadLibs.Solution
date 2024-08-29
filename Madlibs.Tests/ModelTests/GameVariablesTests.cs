@@ -38,5 +38,14 @@ namespace MadLibs.Tests
       string secondName = newGame.SecondName;
       Assert.AreEqual(secondName, newGame.SecondName);
     }
+
+    [TestMethod]
+    public void SetSecondName_SetsValueOfSecondName_String()
+    {
+      GameVariables newGame = new GameVariables();
+      string newValue = "Jane";
+      newGame.SecondName = newValue;
+      Assert.AreEqual(newValue, newGame.SecondName);
+    }
   }
 }
