@@ -13,5 +13,12 @@ namespace MadLibs.Tests
       GameVariables newGame = new GameVariables();
       Assert.AreEqual(typeof(GameVariables), newGame.GetType());
     }
+
+    public void GetFirstName_GetsValueOfFirstName_String()
+    {
+      GameVariables newGame = new GameVariables();
+      string firstName = newGame.FirstName;
+      Assert.AreEqual(firstName, newGame.FirstName);
+    }
   }
 }
