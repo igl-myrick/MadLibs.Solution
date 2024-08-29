@@ -106,5 +106,14 @@ namespace MadLibs.Tests
       string noun = newGame.Noun;
       Assert.AreEqual(noun, newGame.Noun);
     }
+    
+    [TestMethod]
+    public void SetNoun_SetsValueOfNoun_String()
+    {
+      GameVariables newGame = new GameVariables();
+      string newValue = "chair";
+      newGame.Noun = newValue;
+      Assert.AreEqual(newValue, newGame.Noun);
+    }
   }
 }
