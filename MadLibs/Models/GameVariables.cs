@@ -6,6 +6,6 @@ namespace MadLibs.Models
     public string SecondName { get; set; }
     public string Animal { get; set; }
     public string Exclamation { get; set; }
-    public string Verb { get; }
+    public string Verb { get; set; }
   }
 }
