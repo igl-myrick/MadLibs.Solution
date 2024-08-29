@@ -81,5 +81,13 @@ namespace MadLibs.Tests
       newGame.Exclamation = newValue;
       Assert.AreEqual(newValue, newGame.Exclamation);
     }
+
+    [TestMethod]
+    public void GetVerb_GetsValueOfVerb_String()
+    {
+      GameVariables newGame = new GameVariables();
+      string verb = newGame.Verb;
+      Assert.AreEqual(verb, newGame.Verb);
+    }
   }
 }
