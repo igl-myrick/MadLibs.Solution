@@ -4,6 +4,6 @@ namespace MadLibs.Models
   {
     public string FirstName { get; set; }
     public string SecondName { get; set; }
-    public string Animal { get; }
+    public string Animal { get; set; }
   }
 }
