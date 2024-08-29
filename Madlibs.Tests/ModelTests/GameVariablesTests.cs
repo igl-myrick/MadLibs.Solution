@@ -88,6 +88,15 @@ namespace MadLibs.Tests
       GameVariables newGame = new GameVariables();
       string verb = newGame.Verb;
       Assert.AreEqual(verb, newGame.Verb);
+    }   
+    
+    [TestMethod]
+    public void SetVerb_SetsValueOfVerb_String()
+    {
+      GameVariables newGame = new GameVariables();
+      string newValue = "walked";
+      newGame.Verb = newValue;
+      Assert.AreEqual(newValue, newGame.Verb);
     }
   }
 }
