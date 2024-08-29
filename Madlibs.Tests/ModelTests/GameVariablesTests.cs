@@ -47,5 +47,13 @@ namespace MadLibs.Tests
       newGame.SecondName = newValue;
       Assert.AreEqual(newValue, newGame.SecondName);
     }
+
+    [TestMethod]
+    public void GetAnimal_GetsValueOfAnimal_String()
+    {
+      GameVariables newGame = new GameVariables();
+      string animal = newGame.Animal;
+      Assert.AreEqual(animal, newGame.Animal);
+    }
   }
 }
