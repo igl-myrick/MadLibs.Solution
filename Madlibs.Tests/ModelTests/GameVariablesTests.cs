@@ -49,7 +49,7 @@ namespace MadLibs.Tests
     }
 
     [TestMethod]
-    public void GetAnimal_GetsValueOfAnimal_String()
+    public void GetExclamation_GetsValueOfAnimal_String()
     {
       GameVariables newGame = new GameVariables();
       string animal = newGame.Animal;
@@ -71,6 +71,15 @@ namespace MadLibs.Tests
       GameVariables newGame = new GameVariables();
       string exclamation = newGame.Exclamation;
       Assert.AreEqual(exclamation, newGame.Exclamation);
+    }
+
+    [TestMethod]
+    public void SetExclamation_SetsValueOfExclamation_String()
+    {
+      GameVariables newGame = new GameVariables();
+      string newValue = "!!!";
+      newGame.Exclamation = newValue;
+      Assert.AreEqual(newValue, newGame.Exclamation);
     }
   }
 }
