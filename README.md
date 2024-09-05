@@ -26,7 +26,7 @@ _3: Next, run `dotnet build` in the command line to build the program._
 
 _4: Once the program is built, run `dotnet run` to use the program._
 
-_5: When the program is running, navigate to https://localhost:5001 to view and use the website._
+_5: When the program is running, navigate to `https://localhost:5001` to view and use the website._
 
 _6: Optionally, to view tests, enter the `MadLibs.Tests` folder from the top level, run `dotnet restore` to install MSTest packages, and `dotnet test` to run tests._
 
